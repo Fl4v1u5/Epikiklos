@@ -1,7 +1,7 @@
 extends Node
 
 
-
+#This file resets all varaibles to the default values when the user presses "Return" button
 
 
 func _on_Return_pressed():
