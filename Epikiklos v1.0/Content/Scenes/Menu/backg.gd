@@ -1,6 +1,5 @@
 extends Sprite
 
-
 var NbOfEpcs = 0.0; 
 var NbOfSgmnts = 0; 
 var RadiusC = 0; 

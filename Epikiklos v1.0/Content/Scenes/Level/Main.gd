@@ -1,8 +1,5 @@
 extends Node
-
-
-#This file resets all varaibles to the default values when the user presses "Return" button
-
+#This file resets all variables to the default values when the user presses "Return" button
 
 func _on_Return_pressed():
 	
@@ -13,6 +10,8 @@ func _on_Return_pressed():
 	global.ColorC = Color(1.0, 0.0, 1.0); 
 	global.ColorL = Color(0.0, 1.0, 1.0);
 	
-	
 	get_tree().change_scene("res://Content/Scenes/Menu/Menu.tscn");
-	pass # replace with function body
+
+
+func _on_Grow_pressed():
+	$circledrawer.progress = 0

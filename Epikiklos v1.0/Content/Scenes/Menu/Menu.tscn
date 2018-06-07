@@ -8,7 +8,7 @@
 [ext_resource path="res://Content/Graphics/Menu/Epictwo.png" type="Texture" id=6]
 [ext_resource path="res://Content/Graphics/Menu/Epicone.png" type="Texture" id=7]
 
-[node name="Menu" type="Node" index="0"]
+[node name="Menu" type="Node"]
 
 script = ExtResource( 1 )
 
@@ -217,7 +217,7 @@ group = null
 flat = false
 align = 1
 color = Color( 1, 1, 1, 1 )
-edit_alpha = true
+edit_alpha = false
 
 [node name="LabelColorC" type="Label" parent="." index="11"]
 
@@ -268,7 +268,7 @@ group = null
 flat = false
 align = 1
 color = Color( 1, 1, 1, 1 )
-edit_alpha = true
+edit_alpha = false
 
 [node name="LabelNbOfSegments" type="Label" parent="." index="12"]
 
@@ -363,29 +363,9 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+text = "Continue"
 flat = false
 align = 1
-
-[node name="Global" type="Label" parent="Global" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 31.0
-margin_top = 20.0
-margin_right = 108.0
-margin_bottom = 48.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-text = "Continue"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
 
 [connection signal="text_changed" from="LineNbOfEpicicles" to="." method="_on_LineNbOfEpicicles_text_changed"]
 
