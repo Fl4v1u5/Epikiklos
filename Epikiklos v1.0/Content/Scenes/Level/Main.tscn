@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Content/Scenes/Level/Main.gd" type="Script" id=1]
 [ext_resource path="res://Content/Graphics/Menu/backg.png" type="Texture" id=2]
-[ext_resource path="res://Content/Scenes/Level/Node2D.gd" type="Script" id=3]
+[ext_resource path="res://Content/Scenes/Level/grrg.png" type="Texture" id=3]
+[ext_resource path="res://Content/Scenes/Level/Node2D.gd" type="Script" id=4]
 
 [node name="main" type="Node" index="0"]
 
@@ -14,62 +15,14 @@ position = Vector2( 319, 241 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="circledrawer" type="Node2D" parent="." index="1"]
+[node name="grrg" type="Sprite" parent="." index="1"]
 
-script = ExtResource( 3 )
+position = Vector2( 512.556, 303.106 )
+scale = Vector2( 0.536586, 0.559496 )
+texture = ExtResource( 3 )
 
-[node name="Return" type="Button" parent="." index="2"]
+[node name="circledrawer" type="Node2D" parent="." index="2"]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 534.0
-margin_top = 12.0
-margin_right = 615.0
-margin_bottom = 47.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "Return"
-flat = false
-align = 1
-
-[node name="Grow" type="Button" parent="." index="3"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 20.0
-margin_top = 10.0
-margin_right = 123.0
-margin_bottom = 50.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "Watch it grow!"
-flat = false
-align = 1
-
-[connection signal="pressed" from="Return" to="." method="_on_Return_pressed"]
-
-[connection signal="pressed" from="Grow" to="." method="_on_Grow_pressed"]
+script = ExtResource( 4 )
 
 
